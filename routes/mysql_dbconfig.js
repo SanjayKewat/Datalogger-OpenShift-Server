@@ -9,10 +9,10 @@ module.exports={
         password: "mysql",
         database :"matlab_db",*/
 
-        host : "127.8.234.2",
-        user : "adminuw69l1z",
-        password: "3TSrtYlxjJSR",
-        database :"gitlogger",
+        host : "here pass ip address of mysql that run on openshift server",
+        user : "here pass username",
+        password: "here pass password",
+        database :"here pass database name",
         port:3306
     }
 };
