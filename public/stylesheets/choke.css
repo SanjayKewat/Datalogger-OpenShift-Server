@@ -1,0 +1,843 @@
+body {
+    font-family: nft, Verdana, Arial;
+    position: relative;
+    margin: 0;
+}
+
+
+
+.content {
+    width: 99%;
+    position: absolute;
+}
+.chk_tab table {
+    border-collapse: collapse;
+    color: #000;
+
+}
+
+
+#tbchk td {
+    width: 40%;
+    padding: 10% 5%;
+}
+.log_out:hover {
+    cursor: pointer;
+}
+
+/* css formats for the D3 gauge */
+.gauge .domain {
+    stroke-width: 1px;
+    stroke: #ffd800;
+}
+
+/*Major tick line */
+.gauge .tick line {
+    stroke: #000;
+    stroke-width: 1px;
+
+}
+
+/*Minor tick line */
+.gauge line {
+    stroke: #000;
+    stroke-width: 1px;
+
+}
+
+.gauge .arc, .gauge .cursor {
+    opacity: 0;
+}
+
+/*Inside range values font*/
+.gauge .major {
+    fill: #000000;
+    font-size: 12.69px;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif, sans-serif;
+    font-weight: bold;
+}
+
+.gauge .indicator {
+    stroke: #c81531;
+    fill: #000;
+    stroke-width: 2px;
+    /*background-image: url("./png/x.png");*/
+}
+
+/* css formats for the segment display */
+.segdisplay .on {
+    fill: #515151;
+    padding-left: 80px;
+
+}
+
+.segdisplay .off {
+    fill: #999; /* digit color inside */
+    opacity: 0.15;
+    margin-left: 80px;
+}
+
+/*End Css for D3 guage*/
+
+
+.chk_tab td {
+    border: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+.chk_tab th {
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-weight: lighter;
+    text-align: center;
+
+}
+
+
+@media only screen and (min-width : 120px) {
+    #signal-strength {
+        margin-left: 1360.619px;
+        margin-top: 3.727px;
+        position: absolute;
+
+    }
+    #sgn_text {
+        margin-left: 1382.619px;
+        margin-top: 35.727px;
+        position: absolute;
+    }
+
+    #sgn_msg {
+        margin-left: 1200.619px;
+        margin-top: 30.727px;
+        position: absolute;
+        color: #808080;
+        font-size: 16px;
+    }
+    #gauge_1{
+        margin-left: -80px;
+    }
+    #gauge_2{
+        margin-left: -600px;
+    }
+    #gauge_3{
+        margin-left: -260px;
+    }
+
+    #gauge_4{
+        margin-left: 70px;
+    }
+    .home{
+        margin-left: 14.83px;
+        margin-top: 13px;
+        /*width: 27.674px;*/
+        height: 28.422px;
+        position: absolute;
+    }
+    .log_out{
+        position: absolute;
+        margin-top: 20.7727px;
+        margin-left: 1407.576px;
+        width: 20px;
+        height: 20px;
+    }
+    .cas_big
+    {
+        display: none;
+        position: absolute;
+    }
+    .cas_small{
+        display: block;
+        position: absolute;
+    }
+
+    .big_ann
+    {
+        display: none;
+        position: absolute;
+    }
+    .sml_ann{
+        display: block;
+        position: absolute;
+    }
+    .g_arrng {
+        position: absolute;
+        margin-left: 109.267px;
+        margin-top: 46.589px;
+    }
+    .g_arrngII
+    {
+        position: absolute;
+        margin-left: 988.662px;
+        margin-top: 46.589px;
+    }
+    .subtiitle {
+        text-align: center;
+        font-size: 16px;
+        font-family: verdana;
+        margin-left: 140.175px;
+        margin-top: 335.213px;
+        position: absolute;
+        z-index: -2;
+    }
+
+    .subtiitle2 {
+        text-align: center;
+        font-size: 16px;
+        font-family: verdana;
+        margin-left: 560.811px;
+        margin-top: 335.213px;
+        position: absolute;
+        z-index: -2;
+    }
+    .subtiitle3 {
+        text-align: center;
+        font-size: 16px;
+        font-family: verdana;
+        margin-left: 850.811px;
+        margin-top: 335.213px;
+        position: absolute;
+        z-index: -2;
+    }
+    .subtiitle4 {
+        text-align: center;
+        font-size: 16px;
+        font-family: verdana;
+        margin-left:1150.811px;
+        margin-top: 335.213px;
+        position: absolute;
+        z-index: -2;
+    }
+    .gauge_1 {
+        border:1px solid red;
+        margin-left: 45px;
+        margin-top: -323.55px;
+        width: 270px;
+        height: 251px;
+        position: absolute;
+        z-index: -2;
+    }
+    .gauge_2 {
+        margin-left: 1052px;
+
+        margin-top: 86.589px;
+        width: 270px;
+        height: 251px;
+        position: absolute;
+        z-index: -2;
+    }
+    .g_txt{
+        margin-top: 210px;
+        position: absolute;
+        font-size: 16.93px;
+        margin-left: 280px;
+     }
+    .g_txt2{
+        margin-top: 210px;
+        position: absolute;
+        font-size: 16.93px;
+        margin-left: 1160px;
+    }
+    .str_val {
+        font-family: digital;
+        font-size: 20px;
+    }
+    .out_div {
+        margin-top: 10px;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-left: auto;
+        width: 64.438px;
+        height: 90px;
+    }
+    #lgnd {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .drl_div {
+        width: 78px;
+        border: 1px solid #29abe2;
+        vertical-align: middle;
+    }
+
+    .csg_div {
+        width: 78px;
+        border: 1px dashed #699590;
+        vertical-align: middle;
+    }
+
+    .fld2_div {
+        width: 78px;
+        border: 1px solid #4d4dff;
+        vertical-align: middle;
+    }
+
+    .fld3_div {
+        width: 78px;
+        border: 1px dashed #1aff1a;
+        vertical-align: middle;
+    }
+
+    #vlm{
+        font-family: digital;
+        font-size: 50px;
+    }
+    .legend_1 {
+        margin-top: 0px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .legend {
+        margin-top: 34px;
+        font-size: 16px;
+        text-align: left;
+    }
+    .g_lbl {
+        background-color: #fbb03b;
+        text-align: center;
+
+        font-size: 16px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .g1_txt {
+        margin-top: 42px;
+        margin-left: 18px;
+        font-size: 16px;
+        position: absolute;
+    }
+    
+ /*   #myCanvas3_s3 {
+
+        width: 115px;
+        height: 60px;
+        margin-top: 20px;
+        margin-left: -25px;
+        position: relative;
+    }
+
+    #myCanvas4_s4 {
+
+        width: 115px;
+        height: 60px;
+        margin-top: 20px;
+        margin-left: -25px;
+        position: relative;
+
+    }*/
+    .content_2 {
+        margin-left: 577.363px;
+        margin-top: 154.725px;
+        width: 291.468px;
+        height: 168.5px;
+        color: #000;
+        font-size: 16px;
+        text-align: center;
+        position: absolute;
+    }
+    hr {
+        position: absolute;
+        margin-top: 381.006px;
+        width: 99.5%;
+    }
+    .multi_1 {
+        margin-left: 1046.783px;
+        margin-top: 464.55px;
+        width: 300.03px;
+        height: 112.391px;
+        position: absolute;
+
+    }
+
+    #multiline {
+        margin-left: 106.512px;
+        margin-top: 422.591px;
+        width: 856.421px;
+        height: 335px;
+        overflow: hidden;
+        position: absolute;
+    }
+
+    .header {
+        margin-left: 660.619px;
+        margin-top: 21.727px;
+        position: absolute;
+        color: #808080;
+        font-size: 16px;
+        text-align: center;
+    }
+
+
+
+    .f1 {
+        margin: 0;
+        margin-top: 747px; /*change*/
+        width:1439.5px;
+        background-color: rgba(96, 56, 19, 0.80);
+        height: 26.938px;
+        font-family: nft, Verdana, Arial;
+        font-size: 13px; /*change*/
+        color: #fff;
+        position: absolute; /*change*/
+
+    }
+
+    .f2 {
+
+        margin: 0;
+        margin-top:772px; /*change*/
+        width:1439.5px;
+        background-color: #333333;
+        height: 23px;
+        font-family: nft, Verdana, Arial;
+        font-size: 16px; /*change*/
+        color: #fff;
+        position: absolute; /*change*/
+        padding-top: 5px;
+
+    }
+    .logo_div
+    {
+        margin-left: 0;
+        margin-top: 774px;
+        width:95px;
+        height: 25px;
+        position: absolute;
+        background: rgb(51, 51, 51);
+    }
+    #btm_arrow {
+        margin-left: 719.5px;
+        margin-top: 762px;
+        width:28px;
+        height: 12px;
+        z-index: 1;
+        position: absolute;
+    }
+}
+
+@media only screen and (min-width : 1445px) {
+    #signal-strength {
+        margin-left: 1800.619px;
+        margin-top: 3.727px;
+        position: absolute;
+    }
+    #sgn_text {
+        margin-left: 1830.619px;
+        margin-top: 35.727px;
+        position: absolute;
+    }
+    #sgn_msg {
+        margin-left: 1655.619px;
+        margin-top: 38.727px;
+        position: absolute;
+        color: #808080;
+        font-size: 16px;
+    }
+    #gauge_1{
+        margin-left: -180px;
+    }
+    #gauge_2{
+        margin-left: -900px;
+    }
+    #gauge_3{
+        margin-left: -420px;
+    }
+    .cas_big
+    {
+        display: block;
+        position: absolute;
+    }
+    .cas_small{
+        display: none;
+        position: absolute;
+    }
+    .big_ann
+    {
+        display: block;
+        position: absolute;
+    }
+    .sml_ann{
+        display: none;
+        position: absolute;
+    }
+    .home {
+        margin-left: 19.046px;
+        margin-top: 18.667px;
+        /*width: 37px;*/
+        height: 38px;
+        position: absolute;
+    }
+
+    .log_out {
+        margin-left: 1850.5px;
+        margin-top: 19.161px;
+        width: 30px;
+        height: 35px;
+        position: absolute;
+    }
+
+    .header {
+        margin-left: 765px;
+        width: 389px;
+        margin-top: 49.065px;
+        position: absolute;
+        color: #808080;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .content_1 {
+        margin-left: 195.811px;
+        margin-top: 100.165px;
+        width: 356.841px;
+        height: 311.62px;
+        color: #808080;
+        text-align: center;
+        position: absolute;
+    }
+
+    .subtiitle {
+        text-align: center;
+        font-size: 20px;
+        font-family: verdana;
+        margin-left: 90px;
+        margin-top: 435px;
+        width: 300px;
+        height: 40px;
+        position: absolute;
+        z-index: -2;
+    }
+
+    .subtiitle2 {
+        text-align: center;
+        font-size: 20px;
+        font-family: verdana;
+        margin-left: 510px;
+        margin-top: 435px;
+        width: 300px;
+        height: 40px;
+        position: absolute;
+        z-index: -2;
+    }
+    .subtiitle3 {
+        text-align: center;
+        font-size: 20px;
+        font-family: verdana;
+        margin-left: 1000px;
+        margin-top: 435px;
+        width: 300px;
+        height: 40px;
+        position: absolute;
+        z-index: -2;
+    }
+    .subtiitle4 {
+        text-align: center;
+        font-size: 20px;
+        font-family: verdana;
+        margin-left:1480px;
+        margin-top: 435px;
+        width: 300px;
+        height: 40px;
+        position: absolute;
+        z-index: -2;
+    }
+    .content_2 {
+        margin-left: 765px;
+        margin-top: 206.5px;
+        width: 389px;
+        height: 226.5px;
+        color: #000;
+        font-size: 21px;
+        text-align: center;
+        position: absolute;
+    }
+
+    .str_val {
+        font-family: digital;
+        font-size: 21px;
+    }
+
+    .sp_txt {
+        font-size: 18px;
+        color: #000;
+    }
+
+    hr {
+        position: absolute;
+        margin-top: 502.5px;
+        width: 1910px;
+    }
+
+    #multiline {
+        margin-left: 178.551px;
+        margin-top: 530px;
+        width: 1184.949px;
+        height: 420px;
+        overflow: hidden;
+        position: absolute;
+    }
+
+    .multi_1 {
+        margin-left: 1397px;
+        margin-top: 530px;
+        width: 353.5px;
+        height: 350px;
+        position: absolute;
+
+    }
+    #vlm{
+        font-family: digital;
+        font-size: 70px;
+    }
+    .legend_1 {
+        margin-top: 40px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .legend {
+        margin-top: 64px;
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .lgn_sub {
+        font-size: 18px;
+    }
+
+    #lgnd {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .drl_div {
+        width: 116px;
+        border: 1px solid #29abe2;
+        vertical-align: middle;
+    }
+
+    .csg_div {
+        width: 116px;
+        border: 1px dashed #699590;
+        vertical-align: middle;
+    }
+    .fld2_div {
+        width: 116px;
+        border: 1px dashed #4d4dff;
+        vertical-align: middle;
+    }
+    .fld3_div {
+        width: 116px;
+        border: 1px dashed #1aff1a;
+        vertical-align: middle;
+    }
+
+    .f1 {
+        margin-left: 0.5px;
+        margin-top: 998px;
+        width: 1919px;
+        height: 35px;
+        background-color: rgba(96, 56, 19, 0.80);
+        font-family: nft, Verdana, Arial;
+        font-size: 16px;
+        color: #fff;
+        position: absolute;
+        z-index: -1;
+    }
+
+    #btm_arrow {
+        margin-left: 1035px;
+        margin-top: 1020px;
+        width: 32px;
+        height: 15px;
+        z-index: 1;
+        position: absolute;
+    }
+
+    .f2 {
+        margin-left: 0.5px;
+        margin-top: 1033px;
+        width: 1919px;
+        height: 37px;
+        background-color: #333333;
+        background-size: cover;
+        font-family: nft, Verdana, Arial;
+        font-size: 30px;
+        color: #fff;
+        position: absolute;
+    }
+
+    .logo_div {
+        margin-left: 0.5px;
+        margin-top: 1033px;
+        width: 155px;
+        height: 37px;
+        background: #333333;
+        position: absolute;
+    }
+
+/*    #myCanvas3 {
+
+        width: 200px;
+        height: 100px;
+        margin-top: 45px;
+        margin-left: -45px;
+        position: relative;
+    }
+
+    #myCanvas4 {
+
+        width: 200px;
+        height: 100px;
+        margin-top: 45px;
+        margin-left: -45px;
+        position: relative;
+
+    }*/
+
+    .g_lbl {
+        background-color: #fbb03b;
+        text-align: center;
+        height: 24px;
+        font-size: 18px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .out_div {
+        margin-top: 10px;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-left: auto;
+        width: 110px;
+        height: 180px;
+    }
+
+    .g1_txt {
+        margin-top: 90px;
+        margin-left: 38px;
+        font-size: 18px;
+        position: absolute;
+    }
+
+    .gauge_1 {
+        margin-left: 240px;
+        margin-top: 100.165px;
+        width: 395px;
+        height: 320px;
+        position: absolute;
+        z-index: -2;
+    }
+
+    #chartdiv {
+
+        margin-left: 146.5px;
+
+        margin-top: -212px;
+        width: 590px;
+        height: 640px;
+        position: absolute;
+        z-index: -2;
+    }
+
+    #blackimg {
+        margin-left: 415px;
+
+        margin-top: 252px;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .gauge_2 {
+        margin-left: 1373px;
+
+        margin-top: 100.165px;
+        width: 395px;
+        height: 320px;
+        position: absolute;
+        z-index: 2;
+    }
+
+    #chartdiv2 {
+        margin-left: 1279px;
+
+        margin-top: -212px;
+        width: 590px;
+        height: 640px;
+        position: absolute;
+        z-index: -2;
+    }
+
+    #blackimg2 {
+        margin-left: 1554px;
+
+        margin-top: 252px;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        z-index: 2;
+    }
+
+
+
+
+    .content_3 {
+        width: 356px;
+        height: 226.5px;
+        margin-top: 100.165px;
+        margin-left: 1374.811px;
+        position: absolute;
+        color: #000;
+        text-align: center;
+        float: left;
+    }
+
+
+
+
+    #tbchk td {
+        width: 40%;
+        padding: 10% 5%;
+    }
+
+    .multi {
+        width: 1184.949px;
+        height: 408px;
+        margin-top: 530px;
+        margin-left: 178.551px;
+        position: absolute;
+        float: left;
+    }
+
+
+
+    .g_txt {
+        margin-top: 275px;
+        position: absolute;
+        font-size: 16.93px;
+        margin-left: 425px;
+    }
+    .g_txt2 {
+        margin-top: 275px;
+        position: absolute;
+        font-size: 16.93px;
+        margin-left: 1562px;
+    }
+
+    .g_arrng {
+        position: absolute;
+        margin-left: 231px;
+        margin-top: 80px;
+    }
+
+}

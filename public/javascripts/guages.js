@@ -1,0 +1,1 @@
+$('a').each(function(){$(this).click(function(){_gauges.push(['track']);})});

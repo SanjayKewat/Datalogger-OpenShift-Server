@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Sara Sae :: RT138</title>
+    <link href="/stylesheets/fonts.min.css" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/choke.css" rel="stylesheet" /> <!--page CSS-->
+   <!-- <link href="/stylesheets/choke.css" rel="stylesheet" />-->
+</head>
+
+<body>
+
+<div id="main" >
+    <canvas id="signal-strength" height="80" width="80"></canvas>
+    <span id="sgn_msg">Data Logger Signal</span>
+    <span id="sgn_text"></span>
+    <a href="/hist" class="home" title="Back"><u>Click here to view Historical Data</u></a>
+<div class="header">DATALOGGER REALTIME STATUS</div>
+<div class="content">
+    <div  id="gauge_1">
+        <!--<div  id="gauge_1" style="margin-top: 0px;margin-left: 0px;position:absolute;" >-->
+
+        <div class="big_ann">
+            <div style="position: absolute;margin-left: 247px;margin-top: 107px;"> <canvas id="myCanvas" height="310" width="380"  > </canvas></div>
+            <div style="position: absolute;margin-left: 231px;margin-top: 80px;"><span id="speedometer"></span></div>
+
+        </div>
+
+        <div class="sml_ann">
+            <div style=" position: absolute;margin-left: 160px;margin-top: 77px;"><canvas id="myCanvas_s1" height="250" width="260" > </canvas></div>
+            <div style=" position: absolute;margin-left: 110px;margin-top: 46.589px;"> <span id="speedometer_s1"></span></div>
+
+        </div>
+
+        <label class="g_txt"><sup><small>0</small></sup>C</label>
+    </div>
+   <!-- <label id="drill_val">000</label>-->
+    <div class="subtiitle">Temperature(<sup><small>0</small></sup>C)</div>
+
+
+    <div  id="gauge_2">
+        <!--<div  id="gauge_1" style="margin-top: 0px;margin-left: 0px;position:absolute;" >-->
+<div class="cas_big">
+    <div style=" position: absolute;margin-left: 1382px;margin-top: 102px;"> <canvas id="myCanvas2" height="310" width="380"> </canvas></div>
+    <div style="position: absolute;margin-left: 1365px;margin-top: 80px;"><span id="speedometer2"></span></div>
+</div>
+
+
+
+
+        <div class="cas_small">
+         <div style=" position: absolute;margin-left: 1037px;margin-top: 75px;">  <canvas id="myCanvas2_s2" height="250" width="260" > </canvas></div>
+             <div style=" position: absolute;margin-left: 988.662px;margin-top: 46.589px;"> <span id="speedometer2_s2"></span></div>
+
+        </div>
+
+
+
+
+        <label class="g_txt2">pH</label>
+    </div>
+    <div class="subtiitle2">pH</div>
+
+    <div  id="gauge_3">
+        <!--<div  id="gauge_1" style="margin-top: 0px;margin-left: 0px;position:absolute;" >-->
+        <div class="cas_big">
+            <div style=" position: absolute;margin-left: 1382px;margin-top: 102px;"> <canvas id="myCanvas3" height="310" width="380"> </canvas></div>
+            <div style="position: absolute;margin-left: 1365px;margin-top: 80px;"><span id="speedometer3"></span></div>
+        </div>
+
+
+
+
+        <div class="cas_small">
+            <div style=" position: absolute;margin-left: 1037px;margin-top: 75px;">  <canvas id="myCanvas3_s3" height="250" width="260" > </canvas></div>
+            <div style=" position: absolute;margin-left: 988.662px;margin-top: 46.589px;"> <span id="speedometer3_s3"></span></div>
+
+        </div>
+
+
+
+
+        <label class="g_txt2"><small>LPM</small></label>
+    </div>
+    <div class="subtiitle3">Flow Rate(LPM)</div>
+
+    <div  id="gauge_4">
+        <!--<div  id="gauge_1" style="margin-top: 0px;margin-left: 0px;position:absolute;" >-->
+        <div class="cas_big">
+            <div style=" position: absolute;margin-left: 1382px;margin-top: 102px;"> <canvas id="myCanvas4" height="310" width="380"> </canvas></div>
+            <div style="position: absolute;margin-left: 1365px;margin-top: 80px;"><span id="speedometer4"></span></div>
+        </div>
+
+
+
+
+        <div class="cas_small">
+            <div style=" position: absolute;margin-left: 1037px;margin-top: 75px;">  <canvas id="myCanvas4_s4" height="250" width="260" > </canvas></div>
+            <div style=" position: absolute;margin-left: 988.662px;margin-top: 46.589px;"> <span id="speedometer4_s4"></span></div>
+
+        </div>
+
+
+
+
+        <label class="g_txt2">%</label>
+    </div>
+    <div class="subtiitle4">Methane Concentration</div>
+
+
+</div>
+<hr>
+
+<div class="content">
+
+    <div id="multiline" style="">FusionCharts XT will load here!</div>
+    <div class="multi_1">
+
+        <div class="legend_1">
+       &nbsp; Volume (m<sup>3</sup>)<br>
+        <span id="vlm">10000</span>
+
+        </div>
+
+        <div class="legend">
+            <table id="lgnd">
+                <tr valign="bottom">
+                    <td><label class="lgn_sub">Temperature(<sup><small>0</small></sup>C)</label></td>
+                    <td> <div class="drl_div"></div></td>
+                </tr>
+                <tr valign="bottom">
+                    <td><label class="lgn_sub">pH</label></td>
+                    <td> <div class="csg_div"></div></td>
+                </tr>
+                <tr valign="bottom">
+                    <td><label class="lgn_sub">Flow Rate(LPM)</label></td>
+                    <td> <div class="fld2_div"></div></td>
+                </tr>
+                <tr valign="bottom">
+                    <td><label class="lgn_sub">Methance Concentration</label></td>
+                    <td> <div class="fld3_div"></div></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+</div>
+<script src="/javascripts/jquery.min.js"></script>
+<script src="/javascripts/d3.v3.min.js" type="text/javascript"></script>
+<script src="/javascripts/iopctrl.js" type="text/javascript"></script>
+<script src="/javascripts/gauge.min.js" type="text/javascript"></script>
+<script src="/javascripts/guages.js" type="text/javascript"></script>
+<script type="text/javascript" src="fusn_v3.5/fusioncharts.js"></script>
+<script type="text/javascript" src="fusn_v3.5/fusioncharts.widgets.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="/datajs/realtime_choke_data.js"></script>
+<script type="text/javascript"src="/datajs/choke_gauge_design.js"></script>
+</body>
+</html>

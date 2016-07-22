@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Sara Sae :: RT138</title>
+
+<link  rel="stylesheet" type="text/css" href="/stylesheets/jquery.datetimepicker.min.css"/>
+<link href="/stylesheets/fonts.min.css" rel="stylesheet" type="text/css">
+<link href="/stylesheets/presstrend.min.css" rel="stylesheet" /> <!--page CSS-->
+</head>
+<body>
+
+<div id="main" style="display: block;">
+    <a href="/" class="home" title="Back"><u>Back</u></a>
+    <div class="header">HISTORICAL DATA LOG</div>
+    <div class="control2">FROM&nbsp; <input type="text" class="drp" id="txtfr"/>  </div>
+    <div class="control3">TO&nbsp; <input type="text" class="drp" id="txtto"/>  </div>
+    <div class="control4"> </div>
+    <button id="btn">Get Data</button>
+    <!--<div class="titl">PRESSURE vs TIME</div>-->
+
+   <!-- <div class="lgnd">
+        <table id="lgnd_bop" width="100%">
+            <tr valign="middle">
+                <td><label class="subtitle">Channel 1</label></td>
+                <td> <div class="mani_lgnd"></div></td>
+                <td><label class="subtitle">Channel 0</label></td>
+                <td> <div class="acc_lgnd"></div></td>
+            </tr>
+            <tr valign="middle">
+                <td><label class="subtitle">Channel 2</label></td>
+                <td> <div class="ann_lgnd"></div></td>
+                <td><label class="subtitle">Channel 3</label></td>
+                <td> <div class="bs_lgnd"></div></td>
+            </tr>
+        </table>
+        <table id="lgnd_chk" width="100%" style="display: none;">
+            <tr valign="middle">
+                <td><label class="subtitle">Drill Pipe Pressure</label></td>
+                <td> <div class="drll_lgnd"></div></td>
+                <td><label class="subtitle">Casing Pressure</label></td>
+                <td> <div class="csng_lgnd"></div></td>
+            </tr>
+
+        </table>
+    </div>-->
+
+    <div id="bop">
+    </div>
+
+
+</div>
+
+<div id="loading" style="display: block;">
+    <img id="loading-image" src="/png/ajax-loader.gif" alt="Loading..." />
+</div>
+
+<script src="/javascripts/jquery.min.js"></script>
+<script type="text/javascript" src="fusn_v3.11/fusioncharts.js"></script>
+<script type="text/javascript" src="fusn_v3.11/fusioncharts.charts.js"></script>
+<script type="text/javascript" src="fusn_v3.11/themes/fusioncharts.theme.fint.js"></script>
+<script type="text/javascript" src="/javascripts/jquery.datetimepicker.js"></script>
+<script type="text/javascript" src="/javascripts/date.js"></script>
+<script src="/datajs/presstrend.js"></script>
+</body>
+</html>
